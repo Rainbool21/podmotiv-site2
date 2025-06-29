@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindMotivX - Развитие мышления | PodMotivX Platform</title>
+    <meta name="description" content="MindMotivX - программа развития мышления, дисциплины и мотивации. Ежедневные практики для перепрограммирования сознания.">
+    <link rel="stylesheet" href="platform-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="platform.html">
+                        <span class="logo-text">PodMotivX</span>
+                        <span class="logo-subtitle">Platform</span>
+                    </a>
+                </div>
+                
+                <div class="nav-menu">
+                    <a href="leaderx.html" class="nav-link">LeaderX</a>
+                    <a href="mindmotivx.html" class="nav-link active">MindMotivX</a>
+                    <a href="akademiyax.html" class="nav-link">AkademiyaX</a>
+                    <a href="communityx.html" class="nav-link">CommunityX</a>
+                    <a href="blog.html" class="nav-link">Блог</a>
+                </div>
+                
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a href="https://t.me/PodMotivX" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-telegram"></i> Присоединиться
+                    </a>
+                </div>
+                
+                <button class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero mindmotivx-hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>🧠 MindMotivX</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Развитие мышления</span>
+                    <span class="title-line highlight">и дисциплины</span>
+                </h1>
+                <p class="hero-subtitle">Справься с ленью, страхом и эмоциональными проблемами. Ежедневные практики для перепрограммирования сознания и развития дисциплины.</p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary btn-large" id="start-practice">
+                        <i class="fas fa-play"></i> Начать практику
+                    </button>
+                    <button class="btn btn-outline btn-large" id="view-exercises">
+                        <i class="fas fa-dumbbell"></i> Упражнения дня
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="mind-visual">
+                    <div class="mind-orb">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="mind-particles">
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Practice Section -->
+    <section class="practice-section" id="practice-section">
+        <div class="container">
+            <div class="practice-header">
+                <h2>Ежедневная практика</h2>
+                <p>Начни свой день с правильных установок и упражнений</p>
+            </div>
+            
+            <div class="practice-grid">
+                <div class="practice-card">
+                    <div class="practice-icon">🌅</div>
+                    <h3>Утренние установки</h3>
+                    <p>Аудио- и текстовые установки для правильного настроя на день</p>
+                    <div class="practice-content">
+                        <div class="setup-item">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Я создаю свою реальность силой мысли</span>
+                        </div>
+                        <div class="setup-item">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Каждый день я становлюсь лучше</span>
+                        </div>
+                        <div class="setup-item">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Мои возможности безграничны</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary">Слушать установки</button>
+                </div>
+                
+                <div class="practice-card">
+                    <div class="practice-icon">🎯</div>
+                    <h3>Фокус и концентрация</h3>
+                    <p>Техники для повышения продуктивности и концентрации внимания</p>
+                    <div class="practice-content">
+                        <div class="technique-item">
+                            <span class="technique-name">Медитация</span>
+                            <span class="technique-duration">10 мин</span>
+                        </div>
+                        <div class="technique-item">
+                            <span class="technique-name">Помодоро</span>
+                            <span class="technique-duration">25 мин</span>
+                        </div>
+                        <div class="technique-item">
+                            <span class="technique-name">Mindfulness</span>
+                            <span class="technique-duration">15 мин</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary">Начать практику</button>
+                </div>
+                
+                <div class="practice-card">
+                    <div class="practice-icon">💭</div>
+                    <h3>Перепрошивка мышления</h3>
+                    <p>Избавься от ограничивающих убеждений и развивай мышление богатства</p>
+                    <div class="practice-content">
+                        <div class="belief-item">
+                            <span class="belief-old">"Деньги - это зло"</span>
+                            <span class="belief-new">"Деньги - это инструмент для создания ценности"</span>
+                        </div>
+                        <div class="belief-item">
+                            <span class="belief-old">"Я не могу"</span>
+                            <span class="belief-new">"Я учусь и развиваюсь"</span>
+                        </div>
+                        <div class="belief-item">
+                            <span class="belief-old">"Это не для меня"</span>
+                            <span class="belief-new">"Я достоин успеха"</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary">Работать с убеждениями</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Exercises Section -->
+    <section class="exercises-section" id="exercises-section">
+        <div class="container">
+            <div class="exercises-header">
+                <h2>5 упражнений на каждый день</h2>
+                <p>Система ежедневных практик для развития дисциплины и мышления</p>
+            </div>
+            
+            <div class="exercises-container">
+                <div class="exercise-tracker">
+                    <div class="tracker-header">
+                        <h3>Прогресс сегодня</h3>
+                        <span class="date" id="current-date"></span>
+                    </div>
+                    
+                    <div class="exercises-list" id="exercises-list">
+                        <!-- Упражнения будут добавляться динамически -->
+                    </div>
+                    
+                    <div class="tracker-summary">
+                        <div class="summary-item">
+                            <span class="summary-label">Выполнено</span>
+                            <span class="summary-value" id="completed-count">0/5</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">Процент</span>
+                            <span class="summary-value" id="completion-percentage">0%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motivation Cards Section -->
+    <section class="motivation-section">
+        <div class="container">
+            <div class="motivation-header">
+                <h2>Мотивационные карточки</h2>
+                <p>Короткие вдохновляющие мысли для каждого дня</p>
+            </div>
+            <div class="motivation-grid">
+                <div class="motivation-card">
+                    <div class="card-icon">🌟</div>
+                    <p>Каждый день — новый шанс стать лучше.</p>
+                </div>
+                <div class="motivation-card">
+                    <div class="card-icon">🚀</div>
+                    <p>Действуй сейчас. Идеального момента не будет.</p>
+                </div>
+                <div class="motivation-card">
+                    <div class="card-icon">💡</div>
+                    <p>Твои мысли создают твою реальность.</p>
+                </div>
+                <div class="motivation-card">
+                    <div class="card-icon">🔥</div>
+                    <p>Смелость — это делать, даже когда страшно.</p>
+                </div>
+                <div class="motivation-card">
+                    <div class="card-icon">💪</div>
+                    <p>Настойчивость сильнее таланта.</p>
+                </div>
+                <div class="motivation-card">
+                    <div class="card-icon">🌱</div>
+                    <p>Расти, даже если никто не видит твой прогресс.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Time Management Section -->
+    <section class="timemanagement-section">
+        <div class="container">
+            <div class="timemanagement-header">
+                <h2>Тайм-менеджмент для будущих миллиардеров</h2>
+                <p>Системы управления временем успешных людей</p>
+            </div>
+            
+            <div class="timemanagement-grid">
+                <div class="method-card">
+                    <div class="method-icon">📊</div>
+                    <h3>Матрица Эйзенхауэра</h3>
+                    <p>Разделяй задачи по важности и срочности для максимальной эффективности</p>
+                    <div class="method-quadrants">
+                        <div class="quadrant q1">
+                            <span class="quadrant-title">Срочно и важно</span>
+                            <span class="quadrant-desc">Делай сейчас</span>
+                        </div>
+                        <div class="quadrant q2">
+                            <span class="quadrant-title">Важно, но не срочно</span>
+                            <span class="quadrant-desc">Планируй</span>
+                        </div>
+                        <div class="quadrant q3">
+                            <span class="quadrant-title">Срочно, но не важно</span>
+                            <span class="quadrant-desc">Делегируй</span>
+                        </div>
+                        <div class="quadrant q4">
+                            <span class="quadrant-title">Не срочно и не важно</span>
+                            <span class="quadrant-desc">Удаляй</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-icon">📈</div>
+                    <h3>Правило 80/20</h3>
+                    <p>20% усилий дают 80% результатов. Фокусируйся на главном</p>
+                    <div class="method-visual">
+                        <div class="chart-container">
+                            <div class="chart-bar bar-20">
+                                <span>20% усилий</span>
+                                <div class="bar-fill"></div>
+                            </div>
+                            <div class="chart-bar bar-80">
+                                <span>80% результатов</span>
+                                <div class="bar-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-icon">⏰</div>
+                    <h3>Временные блоки</h3>
+                    <p>Выделяй конкретное время для конкретных задач</p>
+                    <div class="time-blocks">
+                        <div class="time-block">
+                            <span class="time">06:00 - 07:00</span>
+                            <span class="activity">Утренняя практика</span>
+                        </div>
+                        <div class="time-block">
+                            <span class="time">09:00 - 11:00</span>
+                            <span class="activity">Важные задачи</span>
+                        </div>
+                        <div class="time-block">
+                            <span class="time">14:00 - 16:00</span>
+                            <span class="activity">Творческая работа</span>
+                        </div>
+                        <div class="time-block">
+                            <span class="time">18:00 - 19:00</span>
+                            <span class="activity">Планирование завтра</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Tracking Section -->
+    <section class="progress-section">
+        <div class="container">
+            <div class="progress-header">
+                <h2>Отслеживание прогресса</h2>
+                <p>Веди дневник своих достижений и развития</p>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-card">
+                    <h3>Чек-лист ежедневного прогресса</h3>
+                    <div class="checklist" id="daily-checklist">
+                        <!-- Чек-лист будет добавляться динамически -->
+                    </div>
+                    <button class="btn btn-primary" id="save-progress">
+                        <i class="fas fa-save"></i> Сохранить прогресс
+                    </button>
+                </div>
+                
+                <div class="progress-card">
+                    <h3>Статистика недели</h3>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">📅</div>
+                            <div class="stat-info">
+                                <span class="stat-number" id="days-completed">0</span>
+                                <span class="stat-label">Дней подряд</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">🎯</div>
+                            <div class="stat-info">
+                                <span class="stat-number" id="tasks-completed">0</span>
+                                <span class="stat-label">Задач выполнено</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">📈</div>
+                            <div class="stat-info">
+                                <span class="stat-number" id="productivity-score">0%</span>
+                                <span class="stat-label">Продуктивность</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PodMotivX Platform</h3>
+                    <p>Создаём поколение осознанных лидеров, предпринимателей и инвесторов</p>
+                    <div class="social-links">
+                        <a href="https://t.me/PodMotivX" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Платформа</h4>
+                    <a href="leaderx.html">LeaderX</a>
+                    <a href="mindmotivx.html">MindMotivX</a>
+                    <a href="akademiyax.html">AkademiyaX</a>
+                    <a href="communityx.html">CommunityX</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Ресурсы</h4>
+                    <a href="blog.html">Блог</a>
+                    <a href="about.html">О нас</a>
+                    <a href="#">Контакты</a>
+                    <a href="#">Поддержка</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Присоединиться</h4>
+                    <a href="https://t.me/PodMotivX" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-telegram"></i> Telegram
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 PodMotivX Platform. Все права защищены.</p>
+                <a href="platform.html">← Вернуться на платформу</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="mindmotivx-script.js"></script>
+</body>
+</html> 
