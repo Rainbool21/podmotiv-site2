@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Режим БОГА</title>
+    <link rel="stylesheet" href="platform-styles.css">
+</head>
+<body>
+    <section class="course-hero-premium">
+        <div class="container" style="text-align:center;">
+            <div class="course-icon">⚡️</div>
+            <div class="course-badges">
+                <span class="course-badge-premium">Бизнес-Путь</span>
+                <span class="course-badge-premium">Мышление</span>
+            </div>
+            <h1 class="course-title">Режим БОГА</h1>
+            <div class="course-desc">Глубинная программа для тотального апгрейда мышления, эмоций и стратегий. Стань лучшей версией себя!</div>
+            <div class="course-progress-bar">
+                <div class="progress-bar"><div class="progress" style="width: 0%" id="course-progress"></div></div>
+                <span class="progress-text" id="course-progress-text">0/5 уроков</span>
+            </div>
+        </div>
+    </section>
+    <main class="container">
+        <section class="premium-section">
+            <h2>Введение</h2>
+            <p>Этот курс — твой путь к сверхчеловеческому уровню мышления, дисциплины и энергии. Ты научишься управлять собой, своими эмоциями и достигать невозможного.</p>
+        </section>
+        <section class="premium-section">
+            <h2>Темы курса</h2>
+            <ul>
+                <li>Самодисциплина на уровне сверхлюдей</li>
+                <li>Установка режима ультрафокуса</li>
+                <li>Победа над слабостью</li>
+                <li>Построение новой личности</li>
+                <li>Ежедневный трекер силы</li>
+                <li>Становление богом</li>
+                <li>Выход из матрицы</li>
+            </ul>
+        </section>
+        <section class="premium-section">
+            <h2>Практические задания</h2>
+            <ul>
+                <li>Трекер привычек</li>
+                <li>Дневник силы</li>
+                <li>Челлендж "21 день"</li>
+            </ul>
+        </section>
+        <section class="premium-section">
+            <h2>Чек-лист курса</h2>
+            <ul>
+                <li>Вести трекер</li>
+                <li>Выполнить челлендж</li>
+            </ul>
+        </section>
+        <section class="premium-section">
+            <h2>Мини-игра: Прокачай силу воли</h2>
+            <p>Не пропусти ни дня! Прокачивай силу воли ежедневно и отмечай прогресс.</p>
+        </section>
+        <section class="premium-lessons-list">
+            <h2>Уроки курса</h2>
+            <ol class="lessons-list">
+                <li><a href="lesson-godmode-1.html">1. Пробуждение силы</a></li>
+                <li><a href="lesson-godmode-2.html">2. Ментальный апгрейд</a></li>
+                <li><a href="lesson-godmode-3.html">3. Эмоциональный контроль</a></li>
+                <li><a href="lesson-godmode-4.html">4. Стратегия и сверхфокус</a></li>
+                <li><a href="lesson-godmode-5.html">5. Режим Бога: интеграция</a></li>
+            </ol>
+        </section>
+        <a href="platform.html" class="btn-main premium">Назад к курсам</a>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var progress = document.getElementById('course-progress');
+            var progressText = document.getElementById('course-progress-text');
+            var lessons = 5;
+            var completed = 0;
+            var percent = Math.round((completed/lessons)*100);
+            progress.style.width = percent + '%';
+            progressText.textContent = completed + '/' + lessons + ' уроков';
+        });
+    </script>
+</body>
+</html> 

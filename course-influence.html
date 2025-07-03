@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сила влияния и коммуникации</title>
+    <link rel="stylesheet" href="platform-styles.css">
+</head>
+<body>
+    <section class="course-hero-premium">
+        <div class="container" style="text-align:center;">
+            <div class="course-icon">🗣️</div>
+            <div class="course-badges">
+                <span class="course-badge-premium">Бизнес-Путь</span>
+                <span class="course-badge-premium">Коммуникация</span>
+            </div>
+            <h1 class="course-title">Сила влияния и коммуникации</h1>
+            <div class="course-desc">Научись влиять на людей и эффективно коммуницировать для достижения своих целей.</div>
+            <div class="course-progress-bar">
+                <div class="progress-bar"><div class="progress" style="width: 0%" id="course-progress"></div></div>
+                <span class="progress-text" id="course-progress-text">0/5 уроков</span>
+            </div>
+        </div>
+    </section>
+    <main class="container">
+        <section class="premium-section">
+            <h2>Введение</h2>
+            <p>Влияние и коммуникация — ключевые навыки для успеха в бизнесе и жизни. Курс научит тебя аргументировать, убеждать, строить доверие и использовать силу слова для достижения целей.</p>
+        </section>
+        <section class="premium-section">
+            <h2>Темы курса</h2>
+            <ul>
+                <li>Влияние и убеждение</li>
+                <li>Сила слова и невербальная коммуникация</li>
+                <li>Психология манипуляций</li>
+                <li>Построение доверия</li>
+                <li>Этика влияния</li>
+            </ul>
+        </section>
+        <section class="premium-section">
+            <h2>Практические задания</h2>
+            <ul>
+                <li>Практика аргументации</li>
+                <li>Анализ речевых паттернов</li>
+                <li>Тренировка эмпатии</li>
+            </ul>
+        </section>
+        <section class="premium-section">
+            <h2>Чек-лист курса</h2>
+            <ul>
+                <li>Выполнить упражнения</li>
+                <li>Провести переговоры</li>
+                <li>Пройти мини-тест</li>
+            </ul>
+        </section>
+        <section class="premium-section">
+            <h2>Мини-игра: Прокачай силу влияния!</h2>
+            <p>Проведи переговоры с разными людьми и попробуй добиться своей цели, используя техники из курса.</p>
+        </section>
+        <section class="premium-lessons-list">
+            <h2>Уроки</h2>
+            <ul>
+                <li><a href="lesson-influence-1.html">Урок 1: Влияние и убеждение</a></li>
+                <li><a href="lesson-influence-2.html">Урок 2: Сила слова и невербальная коммуникация</a></li>
+                <li><a href="lesson-influence-3.html">Урок 3: Психология манипуляций</a></li>
+                <li><a href="lesson-influence-4.html">Урок 4: Построение доверия</a></li>
+                <li><a href="lesson-influence-5.html">Урок 5: Этика влияния</a></li>
+            </ul>
+        </section>
+        <a href="platform.html" class="btn-main premium">Назад к курсам</a>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var progress = document.getElementById('course-progress');
+            var progressText = document.getElementById('course-progress-text');
+            var lessons = 5;
+            var completed = 0;
+            var percent = Math.round((completed/lessons)*100);
+            progress.style.width = percent + '%';
+            progressText.textContent = completed + '/' + lessons + ' уроков';
+        });
+    </script>
+</body>
+</html> 

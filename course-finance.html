@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Финансовая грамотность</title>
+    <link rel="stylesheet" href="platform-styles.css">
+</head>
+<body>
+    <section class="course-hero-premium">
+        <div class="container" style="text-align:center;">
+            <div class="course-icon">📊</div>
+            <div class="course-badges">
+                <span class="course-badge-premium">Бизнес-Путь</span>
+                <span class="course-badge-premium">Финансы</span>
+            </div>
+            <h1 class="course-title">Финансовая грамотность</h1>
+            <div class="course-desc">Научись управлять деньгами, инвестировать и строить своё финансовое будущее.</div>
+            <div class="course-progress-bar">
+                <div class="progress-bar"><div class="progress" style="width: 0%" id="course-progress"></div></div>
+                <span class="progress-text" id="course-progress-text">0/5 уроков</span>
+            </div>
+        </div>
+    </section>
+    <main class="container">
+        <section class="premium-section">
+            <h2>Введение</h2>
+            <p>Финансовая грамотность — это основа уверенности в завтрашнем дне. Курс научит тебя управлять личными финансами, инвестировать и строить финансовую стратегию на будущее.</p>
+        </section>
+        <section class="premium-section">
+            <h2>Темы курса</h2>
+            <ul>
+                <li>Бюджетирование</li>
+                <li>Инвестиции</li>
+                <li>Финансовое планирование</li>
+                <li>Пассивный доход</li>
+                <li>Финансовые ошибки</li>
+            </ul>
+        </section>
+        <section class="premium-section">
+            <h2>Практические задания</h2>
+            <ul>
+                <li>Составить бюджет</li>
+                <li>План инвестиций</li>
+                <li>Анализ расходов</li>
+            </ul>
+        </section>
+        <section class="premium-section">
+            <h2>Чек-лист курса</h2>
+            <ul>
+                <li>Выполнить упражнения</li>
+                <li>Пройти мини-тест</li>
+            </ul>
+        </section>
+        <section class="premium-section">
+            <h2>Мини-игра: Прокачай финансовую грамотность!</h2>
+            <p>Выполни 3 действия для улучшения своих финансов и оцени результат через месяц.</p>
+        </section>
+        <section class="premium-lessons-list">
+            <h2>Уроки</h2>
+            <ul>
+                <li><a href="lesson-finance-1.html">Урок 1: Бюджетирование</a></li>
+                <li><a href="lesson-finance-2.html">Урок 2: Инвестиции</a></li>
+                <li><a href="lesson-finance-3.html">Урок 3: Финансовое планирование</a></li>
+                <li><a href="lesson-finance-4.html">Урок 4: Пассивный доход</a></li>
+                <li><a href="lesson-finance-5.html">Урок 5: Финансовые ошибки</a></li>
+            </ul>
+        </section>
+        <a href="platform.html" class="btn-main premium">Назад к курсам</a>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var progress = document.getElementById('course-progress');
+            var progressText = document.getElementById('course-progress-text');
+            var lessons = 5;
+            var completed = 0;
+            var percent = Math.round((completed/lessons)*100);
+            progress.style.width = percent + '%';
+            progressText.textContent = completed + '/' + lessons + ' уроков';
+        });
+    </script>
+</body>
+</html> 

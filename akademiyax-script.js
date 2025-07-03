@@ -253,12 +253,13 @@ class AkademiyaX {
     }
     
     toggleTheme() {
-        document.body.classList.toggle('dark-theme');
+        const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
         const icon = document.querySelector('#theme-toggle i');
-        if (document.body.classList.contains('dark-theme')) {
-            icon.className = 'fas fa-sun';
-        } else {
-            icon.className = 'fas fa-moon';
+        if (icon) {
+            icon.className = newTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
         }
     }
     

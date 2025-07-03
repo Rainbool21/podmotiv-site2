@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мастер продуктивности</title>
+    <link rel="stylesheet" href="platform-styles.css">
+</head>
+<body>
+    <section class="course-hero-premium">
+        <div class="container" style="text-align:center;">
+            <div class="course-icon">⏱️</div>
+            <div class="course-badges">
+                <span class="course-badge-premium">Бизнес-Путь</span>
+                <span class="course-badge-premium">Продуктивность</span>
+            </div>
+            <h1 class="course-title">Мастер продуктивности</h1>
+            <div class="course-desc">Освой техники продуктивности и управления временем для максимальных результатов.</div>
+            <div class="course-progress-bar">
+                <div class="progress-bar"><div class="progress" style="width: 0%" id="course-progress"></div></div>
+                <span class="progress-text" id="course-progress-text">0/5 уроков</span>
+            </div>
+        </div>
+    </section>
+    <main class="container">
+        <section class="premium-section">
+            <h2>Введение</h2>
+            <p>Продуктивность — это не только количество выполненных задач, но и умение управлять энергией, временем и вниманием. Курс научит тебя работать эффективно, не выгорая.</p>
+        </section>
+        <section class="premium-section">
+            <h2>Темы курса</h2>
+            <ul>
+                <li>Тайм-менеджмент</li>
+                <li>Планирование и приоритеты</li>
+                <li>Работа с прокрастинацией</li>
+                <li>Фокус и концентрация</li>
+                <li>Продуктивные привычки</li>
+            </ul>
+        </section>
+        <section class="premium-section">
+            <h2>Практические задания</h2>
+            <ul>
+                <li>Трекер задач</li>
+                <li>Техника Pomodoro</li>
+                <li>План на неделю</li>
+            </ul>
+        </section>
+        <section class="premium-section">
+            <h2>Чек-лист курса</h2>
+            <ul>
+                <li>Вести трекер</li>
+                <li>Выполнить упражнения</li>
+                <li>Пройти мини-тест</li>
+            </ul>
+        </section>
+        <section class="premium-section">
+            <h2>Мини-игра: Проверь свою продуктивность!</h2>
+            <p>Выполни все задания курса за неделю и оцени свой прогресс.</p>
+        </section>
+        <section class="premium-lessons-list">
+            <h2>Уроки</h2>
+            <ul>
+                <li><a href="lesson-productivity-1.html">Урок 1: Основы продуктивности</a></li>
+                <li><a href="lesson-productivity-2.html">Урок 2: Управление временем</a></li>
+                <li><a href="lesson-productivity-3.html">Урок 3: Энергия и фокус</a></li>
+                <li><a href="lesson-productivity-4.html">Урок 4: Системы и привычки</a></li>
+                <li><a href="lesson-productivity-5.html">Урок 5: Продуктивность в команде</a></li>
+            </ul>
+        </section>
+        <a href="platform.html" class="btn-main premium">Назад к курсам</a>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var progress = document.getElementById('course-progress');
+            var progressText = document.getElementById('course-progress-text');
+            var lessons = 5;
+            var completed = 0;
+            var percent = Math.round((completed/lessons)*100);
+            progress.style.width = percent + '%';
+            progressText.textContent = completed + '/' + lessons + ' уроков';
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Стратегическое мышление</title>
+  <link rel="stylesheet" href="platform-styles.css">
+</head>
+<body>
+  <section class="course-hero-premium">
+    <div class="container" style="text-align:center;">
+      <div class="course-icon">🧠</div>
+      <div class="course-badges">
+        <span class="course-badge-premium">Бизнес-Путь</span>
+        <span class="course-badge-premium">Стратегия</span>
+      </div>
+      <h1 class="course-title">Стратегическое мышление</h1>
+      <div class="course-desc">Научись мыслить стратегически и принимать эффективные решения для роста в бизнесе и жизни.</div>
+      <div class="course-progress-bar">
+        <div class="progress-bar"><div class="progress" style="width: 0%" id="course-progress"></div></div>
+        <span class="progress-text" id="course-progress-text">0/5 уроков</span>
+      </div>
+    </div>
+  </section>
+  <main class="container">
+    <section class="premium-section">
+      <h2>Введение</h2>
+      <p>Стратегическое мышление — это умение видеть картину целиком, ставить амбициозные цели и находить эффективные пути их достижения. Этот курс научит тебя мыслить на несколько шагов вперед и принимать решения, которые приводят к успеху.</p>
+    </section>
+    <section class="premium-section">
+      <h2>Темы курса</h2>
+      <ul>
+        <li><b>Основы стратегического мышления</b></li>
+        <li><b>Постановка и достижение целей</b></li>
+        <li><b>Анализ и принятие решений</b></li>
+        <li><b>Гибкость и адаптация</b></li>
+        <li><b>Стратегии успеха в жизни и бизнесе</b></li>
+      </ul>
+    </section>
+    <section class="premium-section">
+      <h2>Практические задания</h2>
+      <ul>
+        <li>Поставь стратегическую цель на месяц</li>
+        <li>Сделай SWOT-анализ своей ситуации</li>
+        <li>Проанализируй 3 решения, которые ты принял за последнюю неделю</li>
+      </ul>
+    </section>
+    <section class="premium-section">
+      <h2>Чек-лист курса</h2>
+      <ul>
+        <li>Я ставлю стратегические цели</li>
+        <li>Я анализирую ситуацию перед решением</li>
+        <li>Я принимаю решения осознанно</li>
+      </ul>
+    </section>
+    <section class="premium-section">
+      <h2>Мини-игра: Стратегический вызов</h2>
+      <p>Каждый день выбирай одну задачу и ищи нестандартное стратегическое решение. Запиши лучшие находки!</p>
+    </section>
+    <section class="premium-lessons-list">
+      <h2>Уроки</h2>
+      <ul>
+        <li><a href="lesson-strategy-1.html">Урок 1: Основы стратегического мышления</a></li>
+        <li><a href="lesson-strategy-2.html">Урок 2: Постановка и достижение целей</a></li>
+        <li><a href="lesson-strategy-3.html">Урок 3: Анализ и принятие решений</a></li>
+        <li><a href="lesson-strategy-4.html">Урок 4: Гибкость и адаптация</a></li>
+        <li><a href="lesson-strategy-5.html">Урок 5: Стратегии успеха в жизни и бизнесе</a></li>
+      </ul>
+    </section>
+    <a href="platform.html" class="btn-main premium">Назад к курсам</a>
+  </main>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var progress = document.getElementById('course-progress');
+      var progressText = document.getElementById('course-progress-text');
+      var lessons = 5;
+      var completed = 0;
+      var percent = Math.round((completed/lessons)*100);
+      progress.style.width = percent + '%';
+      progressText.textContent = completed + '/' + lessons + ' уроков';
+    });
+  </script>
+</body>
+</html> 

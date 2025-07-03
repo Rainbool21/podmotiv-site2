@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бизнес-Путь | Генератор бизнес-идей и саморазвитие</title>
+  <link rel="stylesheet" href="platform-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; background: var(--bg-primary); color: var(--text-primary); }
+    .container { max-width: 900px; margin: 0 auto; padding: 1.5rem; }
+    .section-title { font-size: 2rem; font-weight: 800; margin-bottom: 1rem; }
+    .section-subtitle { color: var(--text-secondary); margin-bottom: 2rem; }
+    .stepper { display: flex; gap: 0.5rem; margin-bottom: 2rem; }
+    .step { width: 32px; height: 32px; border-radius: 50%; background: var(--bg-tertiary); color: var(--text-muted); display: flex; align-items: center; justify-content: center; font-weight: 700; }
+    .step.active { background: var(--accent-primary); color: #fff; }
+    .step.done { background: var(--accent-secondary); color: #fff; }
+    .question-block { background: var(--bg-secondary); border-radius: 16px; box-shadow: var(--shadow-md); padding: 2rem; margin-bottom: 2rem; }
+    .question-label { font-weight: 600; margin-bottom: 1rem; display: block; }
+    .input, select, textarea { width: 100%; padding: 0.75rem 1rem; border-radius: 8px; border: 1px solid var(--border-color); margin-bottom: 1.5rem; font-size: 1rem; }
+    .btn-main { background: var(--gradient-primary); color: #fff; font-weight: 700; border: none; border-radius: 8px; padding: 0.75rem 2rem; font-size: 1.1rem; cursor: pointer; transition: background 0.2s; }
+    .btn-main:hover { background: var(--gradient-secondary); }
+    .ideas-list { display: grid; gap: 1.5rem; margin-top: 2rem; }
+    .idea-card { background: var(--bg-secondary); border-radius: 16px; box-shadow: var(--shadow-md); padding: 1.5rem; }
+    .idea-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--accent-primary); }
+    .idea-section { margin-bottom: 0.5rem; }
+    .mentor { position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 100; display: flex; align-items: flex-end; }
+    .mentor-avatar { width: 64px; height: 64px; border-radius: 50%; background: var(--gradient-primary); display: flex; align-items: center; justify-content: center; font-size: 2rem; color: #fff; box-shadow: var(--shadow-lg); margin-right: 1rem; }
+    .mentor-bubble { background: var(--bg-secondary); border-radius: 16px; box-shadow: var(--shadow-md); padding: 1rem 1.5rem; font-size: 1rem; max-width: 260px; }
+    @media (max-width: 768px) { .container { padding: 0.5rem; } .section-title { font-size: 1.3rem; } .mentor { right: 0.5rem; bottom: 0.5rem; } .mentor-avatar { width: 48px; height: 48px; font-size: 1.3rem; } .mentor-bubble { font-size: 0.95rem; padding: 0.7rem 1rem; } }
+    .level-badge { background: var(--accent-purple); color: #fff; border-radius: 6px; padding: 0.2rem 0.7rem; font-size: 0.85rem; font-weight: 600; margin-left: 0.5rem; }
+    .course-card { background: var(--bg-secondary); border-radius: 16px; box-shadow: var(--shadow-md); padding: 1.5rem; margin-bottom: 1.5rem; }
+    .course-title { font-size: 1.1rem; font-weight: 700; color: var(--accent-tertiary); margin-bottom: 0.5rem; }
+    .course-section { margin-bottom: 0.5rem; }
+    .achievements { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-bottom: 1.5rem; }
+    .achievement { background: var(--gradient-purple); color: #fff; border-radius: 8px; padding: 0.4rem 1rem; font-size: 0.95rem; font-weight: 600; display: flex; align-items: center; gap: 0.5rem; }
+    .level-system { margin-bottom: 2rem; }
+    .level-bar { background: var(--bg-tertiary); border-radius: 8px; height: 18px; width: 100%; margin-top: 0.5rem; overflow: hidden; }
+    .level-bar-inner { background: var(--gradient-primary); height: 100%; border-radius: 8px; transition: width 0.5s; }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="platform.html">
+            <span class="logo-text">PodMotivX</span>
+            <span class="logo-subtitle">Platform</span>
+          </a>
+        </div>
+        <div class="nav-menu">
+          <a href="leaderx.html" class="nav-link">LeaderX</a>
+          <a href="mindmotivx.html" class="nav-link">MindMotivX</a>
+          <a href="akademiyax.html" class="nav-link">AkademiyaX</a>
+          <a href="communityx.html" class="nav-link">CommunityX</a>
+          <a href="blog.html" class="nav-link">Блог</a>
+          <a href="extra.html" class="nav-link nav-link-extra active"><i class="fas fa-rocket"></i> Бизнес-Путь</a>
+        </div>
+        <div class="nav-actions">
+          <button class="theme-toggle" id="theme-toggle"><i class="fas fa-moon"></i></button>
+          <a href="https://t.me/PodMotivX" class="btn btn-primary" target="_blank"><i class="fab fa-telegram"></i> Присоединиться</a>
+        </div>
+        <button class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
+    <h1 class="section-title">Бизнес-Путь <span class="level-badge">v1</span></h1>
+    <div class="section-subtitle">Генератор бизнес-идей и платформа саморазвития с геймификацией</div>
+    <!-- Генератор бизнес-идей -->
+    <section id="idea-generator">
+      <h2 class="section-title">Генератор бизнес-идей</h2>
+      <div class="stepper" id="stepper"></div>
+      <form id="idea-form" class="question-block"></form>
+      <div id="ideas-output" class="ideas-list"></div>
+    </section>
+    <!-- Прокачайся -->
+    <section id="upgrade-section">
+      <h2 class="section-title">Прокачайся</h2>
+      <div class="level-system">
+        <div>Твой уровень: <span id="user-level">1</span> <span class="level-badge">Новичок</span></div>
+        <div class="level-bar"><div class="level-bar-inner" id="level-bar-inner" style="width: 10%"></div></div>
+      </div>
+      <div class="achievements" id="achievements"></div>
+      <div id="courses-list"></div>
+    </section>
+  </main>
+  <!-- Персонаж-гид -->
+  <div class="mentor" id="mentor">
+    <div class="mentor-avatar">🧑‍💼</div>
+    <div class="mentor-bubble" id="mentor-bubble">Привет! Я твой гид по Бизнес-Пути. Готов начать путь к миллиарду?</div>
+  </div>
+  <!-- Back to Main Button -->
+  <div class="back-to-main">
+    <a href="index.html" class="btn btn-premium">
+      <i class="fas fa-home"></i> Вернуться на главную
+    </a>
+  </div>
+  <script src="extra-script.js"></script>
+</body>
+</html> 
