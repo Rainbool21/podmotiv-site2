@@ -28,7 +28,17 @@
     .mentor { position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 100; display: flex; align-items: flex-end; }
     .mentor-avatar { width: 64px; height: 64px; border-radius: 50%; background: var(--gradient-primary); display: flex; align-items: center; justify-content: center; font-size: 2rem; color: #fff; box-shadow: var(--shadow-lg); margin-right: 1rem; }
     .mentor-bubble { background: var(--bg-secondary); border-radius: 16px; box-shadow: var(--shadow-md); padding: 1rem 1.5rem; font-size: 1rem; max-width: 260px; }
-    @media (max-width: 768px) { .container { padding: 0.5rem; } .section-title { font-size: 1.3rem; } .mentor { right: 0.5rem; bottom: 0.5rem; } .mentor-avatar { width: 48px; height: 48px; font-size: 1.3rem; } .mentor-bubble { font-size: 0.95rem; padding: 0.7rem 1rem; } }
+    @media (max-width: 768px) {
+      .container { padding: 0.5rem; }
+      .section-title { font-size: 1.3rem; }
+      .mentor { right: 0.5rem; bottom: 0.5rem; }
+      .mentor-avatar { width: 48px; height: 48px; font-size: 1.3rem; }
+      .mentor-bubble { font-size: 0.95rem; padding: 0.7rem 1rem; }
+      .course-card, .idea-card { padding: 1.1rem 0.7rem; border-radius: 12px; }
+      .btn-main { font-size: 1.05rem; padding: 0.7rem 1.2rem; border-radius: 10px; }
+      .back-to-main { position: fixed; left: 10px; bottom: 10px; z-index: 1100; }
+      .back-to-main .btn { padding: 0.6rem 1.1rem; font-size: 0.98rem; border-radius: 10px; }
+    }
     .level-badge { background: var(--accent-purple); color: #fff; border-radius: 6px; padding: 0.2rem 0.7rem; font-size: 0.85rem; font-weight: 600; margin-left: 0.5rem; }
     .course-card { background: var(--bg-secondary); border-radius: 16px; box-shadow: var(--shadow-md); padding: 1.5rem; margin-bottom: 1.5rem; }
     .course-title { font-size: 1.1rem; font-weight: 700; color: var(--accent-tertiary); margin-bottom: 0.5rem; }
