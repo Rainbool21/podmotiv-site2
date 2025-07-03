@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Финансовая грамотность — Урок 3 | PodMotivX Platform</title>
+    <meta name="description" content="Урок 3. Инвестиции для начинающих. Основы инвестирования, виды активов, риски.">
+    <link rel="stylesheet" href="platform-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+    function toggleCheck(id) {
+        var el = document.getElementById(id);
+        el.classList.toggle('checked');
+        updateProgress();
+    }
+    function updateProgress() {
+        var total = 2;
+        var done = 0;
+        for (var i = 1; i <= total; i++) {
+            if(document.getElementById('task'+i).classList.contains('checked')) done++;
+        }
+        var percent = Math.round((done/total)*100);
+        document.getElementById('lesson-progress').style.width = percent+'%';
+        document.getElementById('lesson-progress-text').innerText = done + '/' + total + ' упражнений';
+    }
+    </script>
+    <style>
+    .checklist-item {cursor:pointer; padding:8px 0;}
+    .checklist-item.checked {color: #2ecc40; text-decoration: line-through;}
+    .mini-test {margin: 20px 0;}
+    .mini-test label {display:block; margin-bottom:8px;}
+    </style>
+</head>
+<body onload="updateProgress()">
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="platform.html">
+                        <span class="logo-text">PodMotivX</span>
+                        <span class="logo-subtitle">Platform</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="lesson-hero">
+        <div class="container">
+            <h1>Урок 3. Инвестиции для начинающих</h1>
+            <div class="lesson-progress-bar">
+                <div class="progress-bar"><div class="progress" id="lesson-progress" style="width:0%"></div></div>
+                <span class="progress-text" id="lesson-progress-text">0/2 упражнений</span>
+            </div>
+            <p class="lesson-goals"><b>Цели урока:</b> Понять основы инвестирования. Освоить виды активов и оценку рисков.</p>
+        </div>
+    </section>
+    <section class="lesson-content">
+        <div class="container">
+            <h2>Теория</h2>
+            <ul>
+                <li>Инвестиции — это вложение денег с целью получения дохода.</li>
+                <li>Виды активов: акции, облигации, недвижимость, бизнес, фонды.</li>
+                <li>Риски — вероятность потери части или всех вложенных средств.</li>
+            </ul>
+            <h2>Практические упражнения</h2>
+            <div class="checklist">
+                <div class="checklist-item" id="task1" onclick="toggleCheck('task1')">1. <b>Анализ:</b> Изучи 2-3 вида активов и определи их плюсы и минусы.</div>
+                <div class="checklist-item" id="task2" onclick="toggleCheck('task2')">2. <b>План:</b> Составь план первых шагов для начала инвестирования (открыть брокерский счёт, выбрать активы и т.д.).</div>
+            </div>
+            <h2>Вопросы для самопроверки</h2>
+            <ul>
+                <li>Что такое инвестиции?</li>
+                <li>Какие риски есть у инвестора?</li>
+            </ul>
+            <div class="mini-test">
+                <h2>Мини-тест</h2>
+                <form>
+                    <label>1. Инвестиции — это:<br>
+                        <input type="radio" name="q1"> а) Вложение денег с целью дохода<br>
+                        <input type="radio" name="q1"> б) Трата денег<br>
+                        <input type="radio" name="q1"> в) Хранение под подушкой
+                    </label>
+                    <label>2. Что такое риск?<br>
+                        <input type="radio" name="q2"> а) Вероятность потери вложенных средств<br>
+                        <input type="radio" name="q2"> б) Гарантия прибыли<br>
+                        <input type="radio" name="q2"> в) Отсутствие изменений
+                    </label>
+                </form>
+            </div>
+            <div class="lesson-nav">
+                <a href="lesson-finance-2.html" class="btn btn-outline">← Предыдущий урок</a>
+                <a href="course-finance.html" class="btn btn-outline">К курсу</a>
+                <a href="lesson-finance-4.html" class="btn btn-primary">Следующий урок →</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PodMotivX Platform</h3>
+                    <p>Создаём поколение осознанных лидеров, предпринимателей и инвесторов</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PodMotivX Platform. Все права защищены.</p>
+                <a href="index.html">← Вернуться на главную</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

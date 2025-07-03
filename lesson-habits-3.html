@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Привычки успеха — Урок 3 | PodMotivX Platform</title>
+    <meta name="description" content="Урок 3. Преодоление вредных привычек. Как избавиться от привычек, которые мешают развитию.">
+    <link rel="stylesheet" href="platform-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+    function toggleCheck(id) {
+        var el = document.getElementById(id);
+        el.classList.toggle('checked');
+        updateProgress();
+    }
+    function updateProgress() {
+        var total = 2;
+        var done = 0;
+        for (var i = 1; i <= total; i++) {
+            if(document.getElementById('task'+i).classList.contains('checked')) done++;
+        }
+        var percent = Math.round((done/total)*100);
+        document.getElementById('lesson-progress').style.width = percent+'%';
+        document.getElementById('lesson-progress-text').innerText = done + '/' + total + ' упражнений';
+    }
+    </script>
+    <style>
+    .checklist-item {cursor:pointer; padding:8px 0;}
+    .checklist-item.checked {color: #2ecc40; text-decoration: line-through;}
+    .mini-test {margin: 20px 0;}
+    .mini-test label {display:block; margin-bottom:8px;}
+    </style>
+</head>
+<body onload="updateProgress()">
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="platform.html">
+                        <span class="logo-text">PodMotivX</span>
+                        <span class="logo-subtitle">Platform</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="lesson-hero">
+        <div class="container">
+            <h1>Урок 3. Преодоление вредных привычек</h1>
+            <div class="lesson-progress-bar">
+                <div class="progress-bar"><div class="progress" id="lesson-progress" style="width:0%"></div></div>
+                <span class="progress-text" id="lesson-progress-text">0/2 упражнений</span>
+            </div>
+            <p class="lesson-goals"><b>Цели урока:</b> Научиться выявлять и преодолевать вредные привычки. Освоить техники замены негативных паттернов.</p>
+        </div>
+    </section>
+    <section class="lesson-content">
+        <div class="container">
+            <h2>Теория</h2>
+            <ul>
+                <li>Вредные привычки формируются так же, как и полезные — через повторение.</li>
+                <li>Осознанность — первый шаг к изменению.</li>
+                <li>Замена вредной привычки на полезную — эффективная стратегия.</li>
+            </ul>
+            <h2>Практические упражнения</h2>
+            <div class="checklist">
+                <div class="checklist-item" id="task1" onclick="toggleCheck('task1')">1. <b>Анализ:</b> Определи одну вредную привычку, которую хочешь изменить. Почему она мешает?</div>
+                <div class="checklist-item" id="task2" onclick="toggleCheck('task2')">2. <b>Замена:</b> Придумай, на какую полезную привычку ты можешь заменить вредную. Составь план замены.</div>
+            </div>
+            <h2>Вопросы для самопроверки</h2>
+            <ul>
+                <li>Почему вредные привычки так устойчивы?</li>
+                <li>Как заменить вредную привычку на полезную?</li>
+            </ul>
+            <div class="mini-test">
+                <h2>Мини-тест</h2>
+                <form>
+                    <label>1. Как формируются вредные привычки?<br>
+                        <input type="radio" name="q1"> а) Через повторение<br>
+                        <input type="radio" name="q1"> б) Случайно<br>
+                        <input type="radio" name="q1"> в) По желанию
+                    </label>
+                    <label>2. Как заменить вредную привычку?<br>
+                        <input type="radio" name="q2"> а) Осознанно заменить на полезную<br>
+                        <input type="radio" name="q2"> б) Игнорировать<br>
+                        <input type="radio" name="q2"> в) Жаловаться
+                    </label>
+                </form>
+            </div>
+            <div class="lesson-nav">
+                <a href="lesson-habits-2.html" class="btn btn-outline">← Предыдущий урок</a>
+                <a href="course-habits.html" class="btn btn-outline">К курсу</a>
+                <a href="lesson-habits-4.html" class="btn btn-primary">Следующий урок →</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PodMotivX Platform</h3>
+                    <p>Создаём поколение осознанных лидеров, предпринимателей и инвесторов</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PodMotivX Platform. Все права защищены.</p>
+                <a href="index.html">← Вернуться на главную</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

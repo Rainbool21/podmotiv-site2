@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мышление роста — Урок 3 | PodMotivX Platform</title>
+    <meta name="description" content="Урок 3. Постоянное обучение. Как сделать обучение частью жизни, техники саморазвития.">
+    <link rel="stylesheet" href="platform-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+    function toggleCheck(id) {
+        var el = document.getElementById(id);
+        el.classList.toggle('checked');
+        updateProgress();
+    }
+    function updateProgress() {
+        var total = 2;
+        var done = 0;
+        for (var i = 1; i <= total; i++) {
+            if(document.getElementById('task'+i).classList.contains('checked')) done++;
+        }
+        var percent = Math.round((done/total)*100);
+        document.getElementById('lesson-progress').style.width = percent+'%';
+        document.getElementById('lesson-progress-text').innerText = done + '/' + total + ' упражнений';
+    }
+    </script>
+    <style>
+    .checklist-item {cursor:pointer; padding:8px 0;}
+    .checklist-item.checked {color: #2ecc40; text-decoration: line-through;}
+    .mini-test {margin: 20px 0;}
+    .mini-test label {display:block; margin-bottom:8px;}
+    </style>
+</head>
+<body onload="updateProgress()">
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="platform.html">
+                        <span class="logo-text">PodMotivX</span>
+                        <span class="logo-subtitle">Platform</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="lesson-hero">
+        <div class="container">
+            <h1>Урок 3. Постоянное обучение</h1>
+            <div class="lesson-progress-bar">
+                <div class="progress-bar"><div class="progress" id="lesson-progress" style="width:0%"></div></div>
+                <span class="progress-text" id="lesson-progress-text">0/2 упражнений</span>
+            </div>
+            <p class="lesson-goals"><b>Цели урока:</b> Научиться учиться всю жизнь. Освоить техники саморазвития и постоянного обучения.</p>
+        </div>
+    </section>
+    <section class="lesson-content">
+        <div class="container">
+            <h2>Теория</h2>
+            <ul>
+                <li>Постоянное обучение — ключ к успеху в быстро меняющемся мире.</li>
+                <li>Саморазвитие требует дисциплины и любознательности.</li>
+                <li>Техники: чтение, онлайн-курсы, наставничество, практика.</li>
+            </ul>
+            <h2>Практические упражнения</h2>
+            <div class="checklist">
+                <div class="checklist-item" id="task1" onclick="toggleCheck('task1')">1. <b>План:</b> Составь план саморазвития на месяц (что изучать, как применять).</div>
+                <div class="checklist-item" id="task2" onclick="toggleCheck('task2')">2. <b>Рефлексия:</b> Определи 2 новых навыка, которые ты хочешь освоить в этом году.</div>
+            </div>
+            <h2>Вопросы для самопроверки</h2>
+            <ul>
+                <li>Почему важно учиться всю жизнь?</li>
+                <li>Какие техники саморазвития тебе подходят?</li>
+            </ul>
+            <div class="mini-test">
+                <h2>Мини-тест</h2>
+                <form>
+                    <label>1. Постоянное обучение — это:<br>
+                        <input type="radio" name="q1"> а) Ключ к успеху<br>
+                        <input type="radio" name="q1"> б) Потеря времени<br>
+                        <input type="radio" name="q1"> в) Только для студентов
+                    </label>
+                    <label>2. Какие техники помогают учиться?<br>
+                        <input type="radio" name="q2"> а) Чтение, онлайн-курсы, практика<br>
+                        <input type="radio" name="q2"> б) Ожидание<br>
+                        <input type="radio" name="q2"> в) Критика
+                    </label>
+                </form>
+            </div>
+            <div class="lesson-nav">
+                <a href="lesson-mindset-2.html" class="btn btn-outline">← Предыдущий урок</a>
+                <a href="course-mindset.html" class="btn btn-outline">К курсу</a>
+                <a href="lesson-mindset-4.html" class="btn btn-primary">Следующий урок →</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PodMotivX Platform</h3>
+                    <p>Создаём поколение осознанных лидеров, предпринимателей и инвесторов</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PodMotivX Platform. Все права защищены.</p>
+                <a href="index.html">← Вернуться на главную</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

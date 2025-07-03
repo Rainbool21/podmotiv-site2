@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лидерство нового времени — Урок 3 | PodMotivX Platform</title>
+    <meta name="description" content="Урок 3. Лидерство в команде. Как строить доверие, мотивировать и развивать команду.">
+    <link rel="stylesheet" href="platform-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+    function toggleCheck(id) {
+        var el = document.getElementById(id);
+        el.classList.toggle('checked');
+        updateProgress();
+    }
+    function updateProgress() {
+        var total = 2;
+        var done = 0;
+        for (var i = 1; i <= total; i++) {
+            if(document.getElementById('task'+i).classList.contains('checked')) done++;
+        }
+        var percent = Math.round((done/total)*100);
+        document.getElementById('lesson-progress').style.width = percent+'%';
+        document.getElementById('lesson-progress-text').innerText = done + '/' + total + ' упражнений';
+    }
+    </script>
+    <style>
+    .checklist-item {cursor:pointer; padding:8px 0;}
+    .checklist-item.checked {color: #2ecc40; text-decoration: line-through;}
+    .mini-test {margin: 20px 0;}
+    .mini-test label {display:block; margin-bottom:8px;}
+    </style>
+</head>
+<body onload="updateProgress()">
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="platform.html">
+                        <span class="logo-text">PodMotivX</span>
+                        <span class="logo-subtitle">Platform</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="lesson-hero">
+        <div class="container">
+            <h1>Урок 3. Лидерство в команде</h1>
+            <div class="lesson-progress-bar">
+                <div class="progress-bar"><div class="progress" id="lesson-progress" style="width:0%"></div></div>
+                <span class="progress-text" id="lesson-progress-text">0/2 упражнений</span>
+            </div>
+            <p class="lesson-goals"><b>Цели урока:</b> Научиться строить доверие в команде. Освоить методы мотивации и развития команды.</p>
+        </div>
+    </section>
+    <section class="lesson-content">
+        <div class="container">
+            <h2>Теория</h2>
+            <ul>
+                <li>Лидер создает атмосферу доверия и поддержки.</li>
+                <li>Мотивация команды строится на признании, целях и развитии.</li>
+                <li>Развитие команды — постоянный процесс обучения и обратной связи.</li>
+            </ul>
+            <h2>Практические упражнения</h2>
+            <div class="checklist">
+                <div class="checklist-item" id="task1" onclick="toggleCheck('task1')">1. <b>Доверие:</b> Определи 2 способа, как ты можешь укрепить доверие в своей команде.</div>
+                <div class="checklist-item" id="task2" onclick="toggleCheck('task2')">2. <b>Мотивация:</b> Придумай 3 способа мотивировать команду на достижение общей цели.</div>
+            </div>
+            <h2>Вопросы для самопроверки</h2>
+            <ul>
+                <li>Как строится доверие в команде?</li>
+                <li>Что помогает развивать команду?</li>
+            </ul>
+            <div class="mini-test">
+                <h2>Мини-тест</h2>
+                <form>
+                    <label>1. Что создает лидер в команде?<br>
+                        <input type="radio" name="q1"> а) Атмосферу доверия и поддержки<br>
+                        <input type="radio" name="q1"> б) Конкуренцию<br>
+                        <input type="radio" name="q1"> в) Страх
+                    </label>
+                    <label>2. Как развивается команда?<br>
+                        <input type="radio" name="q2"> а) Через обучение и обратную связь<br>
+                        <input type="radio" name="q2"> б) Через критику<br>
+                        <input type="radio" name="q2"> в) Через контроль
+                    </label>
+                </form>
+            </div>
+            <div class="lesson-nav">
+                <a href="lesson-leadership-2.html" class="btn btn-outline">← Предыдущий урок</a>
+                <a href="course-leadership.html" class="btn btn-outline">К курсу</a>
+                <a href="lesson-leadership-4.html" class="btn btn-primary">Следующий урок →</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PodMotivX Platform</h3>
+                    <p>Создаём поколение осознанных лидеров, предпринимателей и инвесторов</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PodMotivX Platform. Все права защищены.</p>
+                <a href="index.html">← Вернуться на главную</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

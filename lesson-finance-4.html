@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Финансовая грамотность — Урок 4 | PodMotivX Platform</title>
+    <meta name="description" content="Урок 4. Финансовая безопасность. Как защитить свои финансы, страхование, резервный фонд.">
+    <link rel="stylesheet" href="platform-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+    function toggleCheck(id) {
+        var el = document.getElementById(id);
+        el.classList.toggle('checked');
+        updateProgress();
+    }
+    function updateProgress() {
+        var total = 2;
+        var done = 0;
+        for (var i = 1; i <= total; i++) {
+            if(document.getElementById('task'+i).classList.contains('checked')) done++;
+        }
+        var percent = Math.round((done/total)*100);
+        document.getElementById('lesson-progress').style.width = percent+'%';
+        document.getElementById('lesson-progress-text').innerText = done + '/' + total + ' упражнений';
+    }
+    </script>
+    <style>
+    .checklist-item {cursor:pointer; padding:8px 0;}
+    .checklist-item.checked {color: #2ecc40; text-decoration: line-through;}
+    .mini-test {margin: 20px 0;}
+    .mini-test label {display:block; margin-bottom:8px;}
+    </style>
+</head>
+<body onload="updateProgress()">
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="platform.html">
+                        <span class="logo-text">PodMotivX</span>
+                        <span class="logo-subtitle">Platform</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="lesson-hero">
+        <div class="container">
+            <h1>Урок 4. Финансовая безопасность</h1>
+            <div class="lesson-progress-bar">
+                <div class="progress-bar"><div class="progress" id="lesson-progress" style="width:0%"></div></div>
+                <span class="progress-text" id="lesson-progress-text">0/2 упражнений</span>
+            </div>
+            <p class="lesson-goals"><b>Цели урока:</b> Научиться защищать свои финансы. Освоить основы страхования и создания резервного фонда.</p>
+        </div>
+    </section>
+    <section class="lesson-content">
+        <div class="container">
+            <h2>Теория</h2>
+            <ul>
+                <li>Финансовая безопасность — это защита от непредвиденных расходов и потерь.</li>
+                <li>Страхование помогает снизить риски.</li>
+                <li>Резервный фонд — подушка безопасности на 3-6 месяцев жизни.</li>
+            </ul>
+            <h2>Практические упражнения</h2>
+            <div class="checklist">
+                <div class="checklist-item" id="task1" onclick="toggleCheck('task1')">1. <b>Резерв:</b> Рассчитай сумму резервного фонда для своей семьи на 3 месяца.</div>
+                <div class="checklist-item" id="task2" onclick="toggleCheck('task2')">2. <b>Страхование:</b> Изучи 2-3 вида страхования и выбери, какие из них актуальны для тебя.</div>
+            </div>
+            <h2>Вопросы для самопроверки</h2>
+            <ul>
+                <li>Зачем нужен резервный фонд?</li>
+                <li>Как страхование помогает защитить финансы?</li>
+            </ul>
+            <div class="mini-test">
+                <h2>Мини-тест</h2>
+                <form>
+                    <label>1. Финансовая безопасность — это:<br>
+                        <input type="radio" name="q1"> а) Защита от непредвиденных расходов<br>
+                        <input type="radio" name="q1"> б) Трата всех денег<br>
+                        <input type="radio" name="q1"> в) Игнорирование рисков
+                    </label>
+                    <label>2. Что такое резервный фонд?<br>
+                        <input type="radio" name="q2"> а) Подушка безопасности на 3-6 месяцев<br>
+                        <input type="radio" name="q2"> б) Кредит<br>
+                        <input type="radio" name="q2"> в) Инвестиции
+                    </label>
+                </form>
+            </div>
+            <div class="lesson-nav">
+                <a href="lesson-finance-3.html" class="btn btn-outline">← Предыдущий урок</a>
+                <a href="course-finance.html" class="btn btn-outline">К курсу</a>
+                <a href="lesson-finance-5.html" class="btn btn-primary">Следующий урок →</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PodMotivX Platform</h3>
+                    <p>Создаём поколение осознанных лидеров, предпринимателей и инвесторов</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PodMotivX Platform. Все права защищены.</p>
+                <a href="index.html">← Вернуться на главную</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лидерство нового времени — Урок 1 | PodMotivX Platform</title>
+    <meta name="description" content="Урок 1. Кто такой лидер? Ключевые качества и мышление лидера нового времени.">
+    <link rel="stylesheet" href="platform-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+    function toggleCheck(id) {
+        var el = document.getElementById(id);
+        el.classList.toggle('checked');
+        updateProgress();
+    }
+    function updateProgress() {
+        var total = 2;
+        var done = 0;
+        for (var i = 1; i <= total; i++) {
+            if(document.getElementById('task'+i).classList.contains('checked')) done++;
+        }
+        var percent = Math.round((done/total)*100);
+        document.getElementById('lesson-progress').style.width = percent+'%';
+        document.getElementById('lesson-progress-text').innerText = done + '/' + total + ' упражнений';
+    }
+    </script>
+    <style>
+    .checklist-item {cursor:pointer; padding:8px 0;}
+    .checklist-item.checked {color: #2ecc40; text-decoration: line-through;}
+    .mini-test {margin: 20px 0;}
+    .mini-test label {display:block; margin-bottom:8px;}
+    </style>
+</head>
+<body onload="updateProgress()">
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="platform.html">
+                        <span class="logo-text">PodMotivX</span>
+                        <span class="logo-subtitle">Platform</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="lesson-hero">
+        <div class="container">
+            <h1>Урок 1. Кто такой лидер?</h1>
+            <div class="lesson-progress-bar">
+                <div class="progress-bar"><div class="progress" id="lesson-progress" style="width:0%"></div></div>
+                <span class="progress-text" id="lesson-progress-text">0/2 упражнений</span>
+            </div>
+            <p class="lesson-goals"><b>Цели урока:</b> Понять, кто такой лидер нового времени. Осознать ключевые качества и мышление лидера.</p>
+        </div>
+    </section>
+    <section class="lesson-content">
+        <div class="container">
+            <h2>Теория</h2>
+            <ul>
+                <li>Лидер — это человек, который берёт ответственность и ведёт за собой других.</li>
+                <li>Ключевые качества: видение, эмпатия, решительность, честность.</li>
+                <li>Лидерство начинается с личного примера и внутренней силы.</li>
+            </ul>
+            <h2>Практические упражнения</h2>
+            <div class="checklist">
+                <div class="checklist-item" id="task1" onclick="toggleCheck('task1')">1. <b>Анализ:</b> Вспомни 2 лидеров, которыми ты восхищаешься. Какие качества их отличают?</div>
+                <div class="checklist-item" id="task2" onclick="toggleCheck('task2')">2. <b>Самооценка:</b> Оцени по 10-балльной шкале свои лидерские качества. Какие из них ты хочешь развить?</div>
+            </div>
+            <h2>Вопросы для самопроверки</h2>
+            <ul>
+                <li>Что отличает лидера от обычного человека?</li>
+                <li>Какие качества ты считаешь самыми важными для лидера?</li>
+            </ul>
+            <div class="mini-test">
+                <h2>Мини-тест</h2>
+                <form>
+                    <label>1. Лидер — это:<br>
+                        <input type="radio" name="q1"> а) Человек, который берёт ответственность и ведёт за собой<br>
+                        <input type="radio" name="q1"> б) Только начальник<br>
+                        <input type="radio" name="q1"> в) Исполнитель
+                    </label>
+                    <label>2. С чего начинается лидерство?<br>
+                        <input type="radio" name="q2"> а) С личного примера и внутренней силы<br>
+                        <input type="radio" name="q2"> б) С приказов<br>
+                        <input type="radio" name="q2"> в) С критики
+                    </label>
+                </form>
+            </div>
+            <div class="lesson-nav">
+                <a href="course-leadership.html" class="btn btn-outline">← К курсу</a>
+                <a href="lesson-leadership-2.html" class="btn btn-primary">Следующий урок →</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PodMotivX Platform</h3>
+                    <p>Создаём поколение осознанных лидеров, предпринимателей и инвесторов</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PodMotivX Platform. Все права защищены.</p>
+                <a href="index.html">← Вернуться на главную</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

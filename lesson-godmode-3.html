@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Режим Бога — Урок 3 | PodMotivX Platform</title>
+    <meta name="description" content="Урок 3. Эмоциональный контроль. Управление эмоциями, превращение страха и лени в топливо для роста.">
+    <link rel="stylesheet" href="platform-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+    function toggleCheck(id) {
+        var el = document.getElementById(id);
+        el.classList.toggle('checked');
+        updateProgress();
+    }
+    function updateProgress() {
+        var total = 2;
+        var done = 0;
+        for (var i = 1; i <= total; i++) {
+            if(document.getElementById('task'+i).classList.contains('checked')) done++;
+        }
+        var percent = Math.round((done/total)*100);
+        document.getElementById('lesson-progress').style.width = percent+'%';
+        document.getElementById('lesson-progress-text').innerText = done + '/' + total + ' упражнений';
+    }
+    </script>
+    <style>
+    .checklist-item {cursor:pointer; padding:8px 0;}
+    .checklist-item.checked {color: #2ecc40; text-decoration: line-through;}
+    .mini-test {margin: 20px 0;}
+    .mini-test label {display:block; margin-bottom:8px;}
+    </style>
+</head>
+<body onload="updateProgress()">
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="platform.html">
+                        <span class="logo-text">PodMotivX</span>
+                        <span class="logo-subtitle">Platform</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="lesson-hero">
+        <div class="container">
+            <h1>Урок 3. Эмоциональный контроль</h1>
+            <div class="lesson-progress-bar">
+                <div class="progress-bar"><div class="progress" id="lesson-progress" style="width:0%"></div></div>
+                <span class="progress-text" id="lesson-progress-text">0/2 упражнений</span>
+            </div>
+            <p class="lesson-goals"><b>Цели урока:</b> Научиться управлять эмоциями. Превращать страх и лень в топливо для роста.</p>
+        </div>
+    </section>
+    <section class="lesson-content">
+        <div class="container">
+            <h2>Теория</h2>
+            <ul>
+                <li>Эмоции — это энергия, которую можно направлять.</li>
+                <li>Страх и лень — сигналы, а не враги.</li>
+                <li>Техника «Стоп-кадр» помогает осознанно управлять эмоциями.</li>
+            </ul>
+            <h2>Практические упражнения</h2>
+            <div class="checklist">
+                <div class="checklist-item" id="task1" onclick="toggleCheck('task1')">1. <b>Стоп-кадр:</b> Когда чувствуешь негативную эмоцию, остановись, назови её, задай вопрос: «Чему она меня учит?» Запиши ответ.</div>
+                <div class="checklist-item" id="task2" onclick="toggleCheck('task2')">2. <b>Трансформация лени:</b> Найди причину своей лени, придумай маленький шаг, который можешь сделать прямо сейчас.</div>
+            </div>
+            <h2>Вопросы для самопроверки</h2>
+            <ul>
+                <li>Как ты обычно реагируешь на страх?</li>
+                <li>Как можно использовать эмоции для роста?</li>
+            </ul>
+            <div class="mini-test">
+                <h2>Мини-тест</h2>
+                <form>
+                    <label>1. Что делать при негативной эмоции?<br>
+                        <input type="radio" name="q1"> а) Остановиться и осознать<br>
+                        <input type="radio" name="q1"> б) Подавить<br>
+                        <input type="radio" name="q1"> в) Игнорировать
+                    </label>
+                    <label>2. Лень — это:<br>
+                        <input type="radio" name="q2"> а) Сигнал о внутреннем конфликте<br>
+                        <input type="radio" name="q2"> б) Черта характера<br>
+                        <input type="radio" name="q2"> в) Неизбежность
+                    </label>
+                </form>
+            </div>
+            <div class="lesson-nav">
+                <a href="lesson-godmode-2.html" class="btn btn-outline">← Предыдущий урок</a>
+                <a href="course-godmode.html" class="btn btn-outline">К курсу</a>
+                <a href="lesson-godmode-4.html" class="btn btn-primary">Следующий урок →</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PodMotivX Platform</h3>
+                    <p>Создаём поколение осознанных лидеров, предпринимателей и инвесторов</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PodMotivX Platform. Все права защищены.</p>
+                <a href="index.html">← Вернуться на главную</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
